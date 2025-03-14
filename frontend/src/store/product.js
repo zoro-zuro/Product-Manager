@@ -68,6 +68,9 @@ export const useProductStore = create((set) => ({
       ),
     }));
 
-    return { success: true, message: `${updateProduct} updated successfully` };
+    return {
+      success: true,
+      message: `${updateProduct.name} updated successfully`,
+    };
   },
 }));
